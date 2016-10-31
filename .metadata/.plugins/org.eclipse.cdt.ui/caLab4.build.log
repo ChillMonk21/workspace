@@ -1,0 +1,116 @@
+00:50:23 **** Incremental Build of configuration Debug for project caLab4 ****
+make all 
+Building file: ../lc3bsim4.c
+Invoking: GCC C Compiler
+gcc -O3 -g3 -Wall -c -fmessage-length=0 -v -ansi -MMD -MP -MF"lc3bsim4.d" -MT"lc3bsim4.o" -o "lc3bsim4.o" "../lc3bsim4.c"
+Using built-in specs.
+COLLECT_GCC=gcc
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --disable-libgcj --with-isl --enable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 6.2.1 20160916 (Red Hat 6.2.1-2) (GCC) 
+COLLECT_GCC_OPTIONS='-O3' '-g3' '-Wall' '-c' '-fmessage-length=0' '-v' '-ansi' '-MMD' '-MP' '-MF' 'lc3bsim4.d' '-MT' 'lc3bsim4.o' '-o' 'lc3bsim4.o' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/6.2.1/cc1 -quiet -v -MMD lc3bsim4.d -MF lc3bsim4.d -MP -MT lc3bsim4.o -dD ../lc3bsim4.c -quiet -dumpbase lc3bsim4.c -mtune=generic -march=x86-64 -auxbase-strip lc3bsim4.o -g3 -O3 -Wall -ansi -version -fmessage-length=0 -o /tmp/ccx6ppe6.s
+GNU C89 (GCC) version 6.2.1 20160916 (Red Hat 6.2.1-2) (x86_64-redhat-linux)
+	compiled by GNU C version 6.2.1 20160916 (Red Hat 6.2.1-2), GMP version 6.1.1, MPFR version 3.1.4, MPC version 1.0.2, isl version 0.14 or 0.13
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/6.2.1/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/6.2.1/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU C89 (GCC) version 6.2.1 20160916 (Red Hat 6.2.1-2) (x86_64-redhat-linux)
+	compiled by GNU C version 6.2.1 20160916 (Red Hat 6.2.1-2), GMP version 6.1.1, MPFR version 3.1.4, MPC version 1.0.2, isl version 0.14 or 0.13
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c310f7e29a18a5e3f0310939bf78ca27
+../lc3bsim4.c: In function 'mdump':
+../lc3bsim4.c:309:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     printf("\nMemory content [0x%0.4x..0x%0.4x] :\n", start, stop);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:309:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+../lc3bsim4.c:312:9: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+  printf("  0x%0.4x (%d) : 0x%0.2x%0.2x\n", address << 1, address << 1, MEMORY[address][1], MEMORY[address][0]);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:312:9: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+../lc3bsim4.c:312:9: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+../lc3bsim4.c:316:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     fprintf(dumpsim_file, "\nMemory content [0x%0.4x..0x%0.4x] :\n", start, stop);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:316:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+../lc3bsim4.c:319:24: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+  fprintf(dumpsim_file, " 0x%0.4x (%d) : 0x%0.2x%0.2x\n", address << 1, address << 1, MEMORY[address][1], MEMORY[address][0]);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:319:24: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+../lc3bsim4.c:319:24: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+../lc3bsim4.c: In function 'rdump':
+../lc3bsim4.c:338:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     printf("PC           : 0x%0.4x\n", CURRENT_LATCHES.PC);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:339:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     printf("IR           : 0x%0.4x\n", CURRENT_LATCHES.IR);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:340:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     printf("STATE_NUMBER : 0x%0.4x\n\n", CURRENT_LATCHES.STATE_NUMBER);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:341:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     printf("BUS          : 0x%0.4x\n", BUS);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:342:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     printf("MDR          : 0x%0.4x\n", CURRENT_LATCHES.MDR);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:343:12: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     printf("MAR          : 0x%0.4x\n", CURRENT_LATCHES.MAR);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:347:9: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+  printf("%d: 0x%0.4x\n", k, CURRENT_LATCHES.REGS[k]);
+         ^~~~~~~~~~~~~~~
+../lc3bsim4.c:354:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     fprintf(dumpsim_file, "PC           : 0x%0.4x\n", CURRENT_LATCHES.PC);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:355:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     fprintf(dumpsim_file, "IR           : 0x%0.4x\n", CURRENT_LATCHES.IR);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:356:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     fprintf(dumpsim_file, "STATE_NUMBER : 0x%0.4x\n\n", CURRENT_LATCHES.STATE_NUMBER);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:357:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     fprintf(dumpsim_file, "BUS          : 0x%0.4x\n", BUS);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:358:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     fprintf(dumpsim_file, "MDR          : 0x%0.4x\n", CURRENT_LATCHES.MDR);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:359:27: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+     fprintf(dumpsim_file, "MAR          : 0x%0.4x\n", CURRENT_LATCHES.MAR);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../lc3bsim4.c:363:24: warning: '0' flag ignored with precision and '%x' gnu_printf format [-Wformat=]
+  fprintf(dumpsim_file, "%d: 0x%0.4x\n", k, CURRENT_LATCHES.REGS[k]);
+                        ^~~~~~~~~~~~~~~
+../lc3bsim4.c: In function 'latch_datapath_values':
+../lc3bsim4.c:49:27: warning: 'mioMuxOutput' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define Low16bits(x) ((x) & 0xFFFF)
+                           ^
+../lc3bsim4.c:1002:9: note: 'mioMuxOutput' was declared here
+     int mioMuxOutput;
+         ^~~~~~~~~~~~
+../lc3bsim4.c:1052:33: warning: 'pcMuxOutput' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         NEXT_LATCHES.PC         = Low16bits(pcMuxOutput);
+                                 ^
+COLLECT_GCC_OPTIONS='-O3' '-g3' '-Wall' '-c' '-fmessage-length=0' '-v' '-ansi' '-MMD' '-MP' '-MF' 'lc3bsim4.d' '-MT' 'lc3bsim4.o' '-o' 'lc3bsim4.o' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o lc3bsim4.o /tmp/ccx6ppe6.s
+GNU assembler version 2.26.1 (x86_64-redhat-linux) using BFD version version 2.26.1-1.fc24
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/6.2.1/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/6.2.1/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O3' '-g3' '-Wall' '-c' '-fmessage-length=0' '-v' '-ansi' '-MMD' '-MP' '-MF' 'lc3bsim4.d' '-MT' 'lc3bsim4.o' '-o' 'lc3bsim4.o' '-mtune=generic' '-march=x86-64'
+Finished building: ../lc3bsim4.c
+ 
+Building target: caLab4
+Invoking: GCC C Linker
+gcc  -o "caLab4"  ./lc3bsim4.o   
+Finished building target: caLab4
+ 
+
+00:50:24 Build Finished (took 557ms)
+
